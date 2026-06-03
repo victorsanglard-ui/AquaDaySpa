@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AquaDay Spa | Spa, Estética e Bem-Estar em [Cidade]</title>
+  <meta name="description" content="AquaDay Spa em [Cidade]: tratamentos faciais, corporais, massagens, relaxamento e beleza num ambiente premium. Agende a sua avaliação personalizada." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.aquadayspa.pt/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AquaDay Spa | Spa, Estética e Bem-Estar em [Cidade]" />
+  <meta property="og:description" content="Realce a sua beleza e renove o seu bem-estar com tratamentos personalizados de estética e spa." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.aquadayspa.pt/" />
+  <meta property="og:image" content="https://www.aquadayspa.pt/imagens/aquaday-spa-og.jpg" />
+  <meta property="og:locale" content="pt_PT" />
+
+  <!-- Local SEO / Structured Data: substitua os campos entre [] antes de publicar -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DaySpa",
+    "@id": "https://www.aquadayspa.pt/#business",
+    "name": "AquaDay Spa",
+    "alternateName": "AquaDay Spa [Cidade]",
+    "url": "https://www.aquadayspa.pt/",
+    "logo": "https://www.aquadayspa.pt/imagens/logo-aquaday-spa.png",
+    "image": "https://www.aquadayspa.pt/imagens/aquaday-spa-og.jpg",
+    "description": "Spa premium acessível especializado em estética facial, estética corporal, massagens, beleza e bem-estar em [Cidade].",
+    "telephone": "+351 [TELEFONE]",
+    "email": "[EMAIL]",
+    "priceRange": "€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[MORADA]",
+      "addressLocality": "[CIDADE]",
+      "postalCode": "[CÓDIGO POSTAL]",
+      "addressCountry": "PT"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "[LATITUDE]",
+      "longitude": "[LONGITUDE]"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "[Cidade]"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ],
+    "sameAs": [
+      "[INSTAGRAM]",
+      "[FACEBOOK]",
+      "[GOOGLE_BUSINESS_PROFILE]"
+    ],
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "name": "Avaliação personalizada gratuita",
+        "description": "Avaliação inicial para recomendação do protocolo de estética ou bem-estar mais adequado."
+      },
+      {
+        "@type": "Offer",
+        "name": "Vouchers-presente AquaDay Spa",
+        "description": "Vouchers para tratamentos de spa, massagens, beleza e bem-estar."
+      }
+    ],
+    "potentialAction": {
+      "@type": "ReserveAction",
+      "target": "https://wa.me/351[NUMERO_WHATSAPP]?text=Olá%20AquaDay%20Spa%2C%20gostaria%20de%20agendar%20uma%20avaliação.",
+      "name": "Agendar avaliação"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --aqua: #73c7c3;
+      --aqua-dark: #2f918e;
+      --serenity: #d9eef4;
+      --serenity-deep: #8dbdcc;
+      --gold: #c7a66a;
+      --beige: #f5efe4;
+      --ivory: #fffdf8;
+      --white: #ffffff;
+      --ink: #153033;
+      --muted: #61777a;
+      --line: rgba(21, 48, 51, 0.12);
+      --shadow: 0 24px 70px rgba(24, 68, 72, 0.12);
+      --radius-xl: 32px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --max: 1180px;
+      --title: Georgia, "Times New Roman", serif;
+      --body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--body);
+      color: var(--ink);
+      background: linear-gradient(180deg, #f8fffe 0%, var(--ivory) 46%, #f9fbfb 100%);
+      line-height: 1.6;
+    }
+
+    img { max-width: 100%; display: block; }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: min(100% - 32px, var(--max));
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      padding: 8px 13px;
+      border: 1px solid rgba(199, 166, 106, 0.38);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.72);
+      color: #876d35;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      backdrop-filter: blur(14px);
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--gold);
+      box-shadow: 0 0 0 6px rgba(199, 166, 106, 0.14);
+    }
+
+    h1, h2, h3 {
+      font-family: var(--title);
+      line-height: 1.05;
+      margin: 0;
+      font-weight: 500;
+      letter-spacing: -0.03em;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 8vw, 6.6rem);
+      max-width: 850px;
+    }
+
+    h2 {
+      font-size: clamp(2.1rem, 4.6vw, 4.2rem);
+    }
+
+    h3 {
+      font-size: clamp(1.35rem, 2.1vw, 1.9rem);
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .lead {
+      font-size: clamp(1.05rem, 2vw, 1.35rem);
+      max-width: 680px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 52px;
+      padding: 15px 22px;
+      border-radius: 999px;
+      font-weight: 800;
+      border: 1px solid transparent;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+      cursor: pointer;
+      font-size: 0.98rem;
+      white-space: nowrap;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: linear-gradient(135deg, var(--aqua-dark), var(--aqua));
+      color: white;
+      box-shadow: 0 18px 45px rgba(47,145,142,0.25);
+    }
+
+    .button-primary:hover {
+      box-shadow: 0 20px 55px rgba(47,145,142,0.35);
+    }
+
+    .button-secondary {
+      background: rgba(255,255,255,0.76);
+      border-color: rgba(47,145,142,0.18);
+      color: var(--aqua-dark);
+      backdrop-filter: blur(12px);
+    }
+
+    .button-gold {
+      background: linear-gradient(135deg, #d8be82, var(--gold));
+      color: #30240d;
+      box-shadow: 0 18px 45px rgba(199,166,106,0.25);
+    }
+
+    .section {
+      padding: clamp(72px, 8vw, 116px) 0;
+      position: relative;
+    }
+
+    .section-head {
+      display: grid;
+      gap: 18px;
+      max-width: 760px;
+      margin-bottom: 42px;
+    }
+
+    .section-head.center {
+      text-align: center;
+      margin-inline: auto;
+      justify-items: center;
+    }
+
+    /* Header */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid rgba(255,255,255,0.35);
+      background: rgba(255,253,248,0.74);
+      backdrop-filter: blur(20px);
+    }
+
+    .nav {
+      height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      letter-spacing: 0.02em;
+    }
+
+    .logo-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(circle at 32% 25%, white 0 16%, transparent 17%),
+                  linear-gradient(135deg, var(--serenity), var(--aqua));
+      box-shadow: 0 14px 30px rgba(47,145,142,0.18);
+      color: var(--aqua-dark);
+      font-family: var(--title);
+      font-size: 1.3rem;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: #39575b;
+      font-size: .94rem;
+      font-weight: 700;
+    }
+
+    .nav-links a:hover { color: var(--aqua-dark); }
+
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: transparent;
+      font-size: 1.65rem;
+      color: var(--ink);
+    }
+
+    /* Hero */
+    .hero {
+      padding: clamp(54px, 8vw, 118px) 0 58px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 4% 18%, rgba(115,199,195,0.22), transparent 34%),
+        radial-gradient(circle at 82% 4%, rgba(217,238,244,0.9), transparent 34%),
+        linear-gradient(180deg, #fbfffe 0%, #fffdf8 100%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.02fr .98fr;
+      gap: clamp(34px, 5vw, 74px);
+      align-items: center;
+    }
+
+    .hero-copy {
+      display: grid;
+      gap: 24px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .trust-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      max-width: 650px;
+      margin-top: 6px;
+    }
+
+    .trust-item {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      padding: 13px 15px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.78);
+      border: 1px solid rgba(21,48,51,0.08);
+      box-shadow: 0 16px 38px rgba(21,48,51,0.05);
+      font-size: .94rem;
+      font-weight: 750;
+      color: #325357;
+    }
+
+    .check {
+      width: 22px;
+      height: 22px;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(115,199,195,.18);
+      color: var(--aqua-dark);
+      font-weight: 900;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 610px;
+    }
+
+    .spa-card {
+      position: absolute;
+      inset: 0 0 54px 44px;
+      overflow: hidden;
+      border-radius: 46px;
+      background:
+        linear-gradient(180deg, rgba(21,48,51,0.08), rgba(21,48,51,0.36)),
+        radial-gradient(circle at 45% 22%, rgba(255,255,255,.7), transparent 22%),
+        linear-gradient(135deg, #d9f4f1 0%, #eef9f8 35%, #dac38d 100%);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,0.75);
+    }
+
+    .spa-card::before {
+      content: "";
+      position: absolute;
+      inset: 11%;
+      border-radius: 999px 999px 46px 46px;
+      background:
+        radial-gradient(circle at 50% 12%, rgba(255,255,255,.95), transparent 20%),
+        linear-gradient(180deg, rgba(141,189,204,.95), rgba(115,199,195,.42));
+      opacity: .9;
+      filter: blur(.2px);
+      transform: rotate(-6deg);
+    }
+
+    .spa-card::after {
+      content: "Substituir por foto premium real do espaço ou tratamento";
+      position: absolute;
+      left: 28px;
+      right: 28px;
+      bottom: 28px;
+      color: rgba(255,255,255,.86);
+      font-size: .85rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    .floating-panel {
+      position: absolute;
+      left: 0;
+      bottom: 6px;
+      width: min(86%, 430px);
+      padding: 24px;
+      border-radius: 26px;
+      background: rgba(255,255,255,.86);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 22px 70px rgba(21,48,51,0.16);
+      border: 1px solid rgba(255,255,255,.8);
+      display: grid;
+      gap: 13px;
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #9d7a30;
+      font-weight: 900;
+    }
+
+    .mini-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .mini-stat {
+      padding: 12px;
+      border-radius: 18px;
+      background: rgba(217,238,244,.48);
+      text-align: center;
+    }
+
+    .mini-stat strong {
+      display: block;
+      font-size: 1.15rem;
+      color: var(--ink);
+    }
+
+    .mini-stat span {
+      display: block;
+      font-size: .76rem;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    /* Social Proof */
+    .proof-strip {
+      margin-top: -24px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .proof-box {
+      background: rgba(255,255,255,0.88);
+      border: 1px solid rgba(21,48,51,0.09);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius-xl);
+      padding: 22px;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 24px;
+      align-items: center;
+      backdrop-filter: blur(18px);
+    }
+
+    .score {
+      padding: 26px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, rgba(217,238,244,.9), rgba(245,239,228,.62));
+      text-align: center;
+    }
+
+    .stars {
+      color: #b98e3d;
+      letter-spacing: .12em;
+      font-size: 1.4rem;
+    }
+
+    .score strong {
+      display: block;
+      font-family: var(--title);
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      line-height: 1;
+      margin-top: 6px;
+    }
+
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .testimonial {
+      padding: 18px;
+      border-radius: 22px;
+      background: #fff;
+      border: 1px solid rgba(21,48,51,0.07);
+    }
+
+    .testimonial p {
+      font-size: .94rem;
+      color: #466063;
+    }
+
+    .testimonial strong {
+      display: block;
+      margin-top: 12px;
+      font-size: .9rem;
+    }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 54px;
+      align-items: center;
+    }
+
+    .image-stack {
+      display: grid;
+      grid-template-columns: 1fr .72fr;
+      gap: 18px;
+      align-items: end;
+    }
+
+    .photo-placeholder {
+      min-height: 430px;
+      border-radius: 36px;
+      background: linear-gradient(135deg, rgba(115,199,195,.35), rgba(245,239,228,.96)),
+                  radial-gradient(circle at 50% 28%, rgba(255,255,255,.98), transparent 18%);
+      border: 1px solid rgba(255,255,255,.75);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .photo-placeholder.small {
+      min-height: 290px;
+      border-radius: 30px;
+      transform: translateY(34px);
+      background: linear-gradient(135deg, rgba(217,238,244,.95), rgba(199,166,106,.35));
+    }
+
+    .photo-placeholder span {
+      position: absolute;
+      inset: auto 22px 22px 22px;
+      color: rgba(21,48,51,0.58);
+      font-size: .82rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .feature {
+      display: flex;
+      gap: 13px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255,255,255,.72);
+    }
+
+    /* Services */
+    .services {
+      background:
+        radial-gradient(circle at 10% 20%, rgba(115,199,195,.16), transparent 35%),
+        linear-gradient(180deg, rgba(217,238,244,.24), rgba(255,255,255,0));
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      min-height: 100%;
+      padding: 26px;
+      border-radius: 28px;
+      background: rgba(255,255,255,.84);
+      border: 1px solid rgba(21,48,51,0.08);
+      box-shadow: 0 20px 55px rgba(21,48,51,0.07);
+      display: grid;
+      gap: 18px;
+    }
+
+    .service-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(217,238,244,1), rgba(115,199,195,.42));
+      color: var(--aqua-dark);
+      font-size: 1.55rem;
+    }
+
+    .service-card ul, .benefit-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 8px;
+      color: #536d70;
+      font-size: .95rem;
+    }
+
+    .service-card li::before {
+      content: "✓ ";
+      color: var(--aqua-dark);
+      font-weight: 900;
+    }
+
+    .service-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      margin-top: auto;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      font-size: .9rem;
+      font-weight: 800;
+      color: #31565a;
+    }
+
+    .micro-link {
+      color: var(--aqua-dark);
+      font-weight: 900;
+    }
+
+    /* Benefits */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .benefit-card {
+      padding: 24px;
+      border-radius: 28px;
+      border: 1px solid rgba(21,48,51,.08);
+      background: rgba(255,255,255,.76);
+      display: grid;
+      gap: 12px;
+    }
+
+    .benefit-card strong {
+      font-family: var(--title);
+      font-size: 1.35rem;
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    /* Before / after */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .case-card {
+      overflow: hidden;
+      border-radius: 30px;
+      background: white;
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 52px rgba(21,48,51,.08);
+    }
+
+    .case-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 230px;
+    }
+
+    .before, .after {
+      display: grid;
+      place-items: end start;
+      padding: 16px;
+      color: rgba(21,48,51,.65);
+      font-size: .8rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .before {
+      background: linear-gradient(135deg, #edf1f1, #d8dfdf);
+    }
+
+    .after {
+      background: linear-gradient(135deg, #d9eef4, #f5efe4);
+    }
+
+    .case-copy {
+      padding: 20px;
+      display: grid;
+      gap: 6px;
+    }
+
+    .note {
+      margin-top: 20px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(217,238,244,.38);
+      color: #4c696c;
+      font-size: .92rem;
+      border: 1px solid rgba(115,199,195,.22);
+    }
+
+    /* Why */
+    .why-grid {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .premium-panel {
+      padding: clamp(28px, 4vw, 44px);
+      border-radius: var(--radius-xl);
+      background: linear-gradient(135deg, var(--ink), #29565a);
+      color: white;
+      box-shadow: var(--shadow);
+      display: grid;
+      align-content: center;
+      gap: 20px;
+    }
+
+    .premium-panel p { color: rgba(255,255,255,.72); }
+
+    .compare {
+      padding: 28px;
+      border-radius: var(--radius-xl);
+      background: rgba(255,255,255,.88);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .compare-row {
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: 12px;
+      align-items: start;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .compare-row:last-child { border-bottom: 0; }
+
+    /* Process */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .step {
+      position: relative;
+      padding: 28px;
+      border-radius: 30px;
+      background: rgba(255,255,255,.78);
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 52px rgba(21,48,51,.07);
+      display: grid;
+      gap: 14px;
+    }
+
+    .step-number {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--aqua), var(--serenity));
+      color: #16484c;
+      font-weight: 950;
+    }
+
+    /* Offer */
+    .offer {
+      padding: clamp(52px, 8vw, 86px);
+      border-radius: 42px;
+      background:
+        radial-gradient(circle at 84% 18%, rgba(255,255,255,.55), transparent 22%),
+        linear-gradient(135deg, rgba(115,199,195,.92), rgba(217,238,244,.92) 55%, rgba(199,166,106,.42));
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 28px;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .offer p { color: #365b5f; }
+
+    .offer-badge {
+      padding: 22px;
+      border-radius: 28px;
+      background: rgba(255,255,255,.8);
+      border: 1px solid rgba(255,255,255,.75);
+      text-align: center;
+    }
+
+    .offer-badge strong {
+      display: block;
+      font-family: var(--title);
+      font-size: 3rem;
+      color: var(--aqua-dark);
+      line-height: 1;
+    }
+
+    /* FAQ */
+    .faq-list {
+      display: grid;
+      gap: 12px;
+      max-width: 900px;
+      margin-inline: auto;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(255,255,255,.78);
+      padding: 18px 22px;
+      box-shadow: 0 16px 44px rgba(21,48,51,.05);
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 900;
+      color: #27494d;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    details p {
+      margin-top: 12px;
+    }
+
+    /* Final CTA */
+    .final-cta {
+      text-align: center;
+      padding: clamp(64px, 9vw, 106px) 24px;
+      border-radius: 44px;
+      background:
+        linear-gradient(180deg, rgba(21,48,51,.58), rgba(21,48,51,.76)),
+        radial-gradient(circle at 30% 20%, rgba(115,199,195,.62), transparent 32%),
+        linear-gradient(135deg, #91d9d4, #f5efe4);
+      color: white;
+      display: grid;
+      justify-items: center;
+      gap: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .final-cta p {
+      color: rgba(255,255,255,.82);
+      font-size: 1.18rem;
+    }
+
+    /* Form */
+    .lead-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr auto;
+      gap: 12px;
+      padding: 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.78);
+      border: 1px solid rgba(255,255,255,.9);
+      box-shadow: 0 20px 60px rgba(21,48,51,.10);
+      width: min(100%, 900px);
+      margin-top: 12px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      border: 0;
+      outline: 0;
+      padding: 16px 18px;
+      border-radius: 999px;
+      background: white;
+      font: inherit;
+      color: var(--ink);
+    }
+
+    /* Footer */
+    footer {
+      padding: 64px 0 34px;
+      background: #102c2f;
+      color: white;
+      margin-top: 80px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    footer p, footer a {
+      color: rgba(255,255,255,.68);
+    }
+
+    .footer-title {
+      color: white;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    .footer-list {
+      display: grid;
+      gap: 9px;
+    }
+
+    .footer-bottom {
+      margin-top: 44px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 14px;
+      color: rgba(255,255,255,.58);
+      font-size: .9rem;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 80;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #25d366;
+      color: white;
+      box-shadow: 0 20px 45px rgba(37,211,102,.35);
+      font-size: 1.8rem;
+      font-weight: 900;
+    }
+
+    .mobile-sticky-cta {
+      display: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 1020px) {
+      .nav-links { display: none; }
+      .menu-toggle { display: block; }
+      .nav-links.open {
+        display: grid;
+        position: absolute;
+        top: 74px;
+        left: 16px;
+        right: 16px;
+        padding: 18px;
+        background: rgba(255,253,248,.96);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        box-shadow: var(--shadow);
+      }
+
+      .hero-grid,
+      .about-grid,
+      .why-grid,
+      .offer,
+      .proof-box {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual { min-height: 520px; }
+      .spa-card { inset: 0 0 70px 16px; }
+      .card-grid { grid-template-columns: repeat(2, 1fr); }
+      .testimonials { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .lead-form { grid-template-columns: 1fr; border-radius: 28px; }
+    }
+
+    @media (max-width: 680px) {
+      .container { width: min(100% - 24px, var(--max)); }
+      .nav { height: 68px; }
+      .nav-links.open { top: 68px; }
+
+      .hero {
+        padding-top: 42px;
+      }
+
+      h1 { font-size: clamp(2.55rem, 15vw, 4rem); }
+      .trust-row,
+      .card-grid,
+      .benefits-grid,
+      .gallery,
+      .steps,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions .button,
+      .final-cta .button,
+      .offer .button {
+        width: 100%;
+      }
+
+      .hero-visual { min-height: 430px; }
+      .spa-card { inset: 0 0 78px 0; border-radius: 34px; }
+      .floating-panel { width: 100%; padding: 18px; }
+      .mini-stats { grid-template-columns: 1fr 1fr 1fr; }
+      .image-stack { grid-template-columns: 1fr; }
+      .photo-placeholder.small { transform: none; }
+      .section { padding: 64px 0; }
+      .offer { padding: 34px 20px; border-radius: 32px; }
+      .final-cta { border-radius: 32px; }
+      footer { padding-bottom: 92px; }
+      .whatsapp-float { bottom: 82px; }
+
+      .mobile-sticky-cta {
+        position: fixed;
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        z-index: 70;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        padding: 8px;
+        border-radius: 999px;
+        background: rgba(255,255,255,.9);
+        backdrop-filter: blur(16px);
+        box-shadow: 0 18px 44px rgba(21,48,51,.16);
+      }
+
+      .mobile-sticky-cta .button {
+        min-height: 46px;
+        padding: 12px 14px;
+        font-size: .88rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="whatsapp-float" href="https://wa.me/351[NUMERO_WHATSAPP]?text=Olá%20AquaDay%20Spa%2C%20gostaria%20de%20agendar%20uma%20avaliação." aria-label="Falar com a AquaDay Spa pelo WhatsApp">↗</a>
+
+  <div class="mobile-sticky-cta" aria-label="Ações rápidas">
+    <a class="button button-primary" href="#agendar">Agendar</a>
+    <a class="button button-secondary" href="https://wa.me/351[NUMERO_WHATSAPP]?text=Olá%20AquaDay%20Spa%2C%20quero%20saber%20mais.">WhatsApp</a>
+  </div>
+
+  <header class="topbar">
+    <div class="container nav">
+      <a href="#" class="brand" aria-label="AquaDay Spa">
+        <span class="logo-mark">A</span>
+        <span>AquaDay Spa</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#faq">FAQ</a>
+        <a class="button button-primary" href="#agendar">Agendar Agora</a>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Abrir menu" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Spa premium em [Cidade]</span>
+          <h1>Realce a Sua Beleza. Renove o Seu Bem-Estar.</h1>
+          <p class="lead">Tratamentos de estética e spa personalizados para que se sinta mais confiante, relaxada e radiante — com cuidado humano, segurança e uma experiência verdadeiramente memorável.</p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#agendar">Agendar Agora</a>
+            <a class="button button-secondary" href="https://wa.me/351[NUMERO_WHATSAPP]?text=Olá%20AquaDay%20Spa%2C%20gostaria%20de%20agendar%20uma%20avaliação.">Falar no WhatsApp</a>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust-item"><span class="check">✓</span>Atendimento personalizado</div>
+            <div class="trust-item"><span class="check">✓</span>Profissionais qualificados</div>
+            <div class="trust-item"><span class="check">✓</span>Ambiente exclusivo</div>
+            <div class="trust-item"><span class="check">✓</span>Resultados comprovados</div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Imagem premium de spa">
+          <div class="spa-card"></div>
+          <div class="floating-panel">
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span>Experiência 5 estrelas</span>
+            </div>
+            <p>Um refúgio de estética, beleza e relaxamento pensado para cuidar de si com elegância, precisão e atenção aos detalhes.</p>
+            <div class="mini-stats">
+              <div class="mini-stat"><strong>500+</strong><span>clientes</span></div>
+              <div class="mini-stat"><strong>4.9</strong><span>avaliação</span></div>
+              <div class="mini-stat"><strong>100%</strong><span>cuidado</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="Prova social">
+      <div class="container proof-box">
+        <div class="score">
+          <div class="stars">★★★★★</div>
+          <strong>4.9/5</strong>
+          <p>Mais de 500 clientes satisfeitos</p>
+        </div>
+
+        <div class="testimonials">
+          <article class="testimonial">
+            <p>“Senti-me cuidada desde o primeiro minuto. O ambiente é calmo, elegante e o resultado superou as minhas expectativas.”</p>
+            <strong>— Cliente AquaDay</strong>
+          </article>
+          <article class="testimonial">
+            <p>“A avaliação foi muito clara e o tratamento foi adaptado ao que eu precisava. Saí mais leve, confiante e radiante.”</p>
+            <strong>— Cliente AquaDay</strong>
+          </article>
+          <article class="testimonial">
+            <p>“Profissionalismo, delicadeza e atenção aos detalhes. É o tipo de espaço onde dá vontade de voltar.”</p>
+            <strong>— Cliente AquaDay</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container about-grid">
+        <div class="image-stack">
+          <div class="photo-placeholder"><span>Foto real do espaço</span></div>
+          <div class="photo-placeholder small"><span>Foto da equipa</span></div>
+        </div>
+
+        <div class="section-head">
+          <span class="eyebrow">Sobre a AquaDay Spa</span>
+          <h2>Um espaço criado para devolver calma, beleza e confiança.</h2>
+          <p class="lead">A AquaDay Spa nasceu para oferecer uma experiência de estética e bem-estar onde cada detalhe importa: a escuta, o diagnóstico, o toque, os protocolos e a sensação de sair melhor do que entrou.</p>
+          <p>Unimos técnicas de estética facial, estética corporal, massagens e beleza com um atendimento acolhedor e personalizado. Aqui, cada tratamento é pensado para respeitar a sua individualidade, os seus objetivos e o seu momento de vida.</p>
+
+          <div class="feature-list">
+            <div class="feature"><span class="check">✓</span><div><strong>Experiência personalizada</strong><p>Recomendações ajustadas ao seu perfil, rotina e objetivos.</p></div></div>
+            <div class="feature"><span class="check">✓</span><div><strong>Ambiente premium e seguro</strong><p>Um refúgio elegante, higienizado e preparado para o seu conforto.</p></div></div>
+            <div class="feature"><span class="check">✓</span><div><strong>Foco em resultados visíveis</strong><p>Protocolos pensados para beleza, autoestima e bem-estar real.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="servicos">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Tratamentos</span>
+          <h2>Serviços premium para cuidar de si por completo.</h2>
+          <p class="lead">Escolha o seu momento: beleza, relaxamento, renovação da pele, contorno corporal ou um ritual completo de bem-estar.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="service-card">
+            <div class="service-icon">✦</div>
+            <h3>Estética Facial</h3>
+            <p>Pele mais luminosa, equilibrada e saudável com protocolos adaptados às suas necessidades.</p>
+            <ul>
+              <li>Limpeza de pele</li>
+              <li>Hidratação profunda</li>
+              <li>Rejuvenescimento facial</li>
+            </ul>
+            <div class="service-meta"><span>45–90 min</span><a class="micro-link" href="#agendar">Agendar</a></div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">◌</div>
+            <h3>Estética Corporal</h3>
+            <p>Tratamentos corporais para sensação de leveza, firmeza e melhoria da silhueta.</p>
+            <ul>
+              <li>Drenagem linfática</li>
+              <li>Massagem modeladora</li>
+              <li>Tratamentos redutores</li>
+            </ul>
+            <div class="service-meta"><span>50–75 min</span><a class="micro-link" href="#agendar">Agendar</a></div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">≈</div>
+            <h3>Spa & Relaxamento</h3>
+            <p>Rituais para desacelerar, aliviar tensão e recuperar equilíbrio físico e emocional.</p>
+            <ul>
+              <li>Massagens relaxantes</li>
+              <li>Aromaterapia</li>
+              <li>Ritual spa completo</li>
+            </ul>
+            <div class="service-meta"><span>60–120 min</span><a class="micro-link" href="#agendar">Agendar</a></div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">♡</div>
+            <h3>Beleza</h3>
+            <p>Detalhes que realçam a sua expressão, harmonia facial e confiança no dia a dia.</p>
+            <ul>
+              <li>Design de sobrancelhas</li>
+              <li>Pestanas</li>
+              <li>Cuidados personalizados</li>
+            </ul>
+            <div class="service-meta"><span>30–75 min</span><a class="micro-link" href="#agendar">Agendar</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="beneficios">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Benefícios</span>
+          <h2>Mais do que estética. Uma experiência de renovação.</h2>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card"><strong>Autoestima elevada</strong><p>Cuidados que ajudam a realçar a sua beleza natural e a sentir-se melhor consigo.</p></div>
+          <div class="benefit-card"><strong>Relaxamento profundo</strong><p>Ambiente, toque e aromas pensados para reduzir tensão e desacelerar a mente.</p></div>
+          <div class="benefit-card"><strong>Redução do stress</strong><p>Tratamentos que promovem pausa, respiração e sensação de equilíbrio.</p></div>
+          <div class="benefit-card"><strong>Pele mais saudável</strong><p>Protocolos faciais para hidratação, luminosidade e cuidado contínuo.</p></div>
+          <div class="benefit-card"><strong>Resultados visíveis</strong><p>Planos personalizados para favorecer evolução estética com segurança.</p></div>
+          <div class="benefit-card"><strong>Atendimento exclusivo</strong><p>Um acompanhamento próximo, humano e orientado aos seus objetivos.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resultados">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Antes e depois</span>
+          <h2>Transformações reais, com cuidado e responsabilidade.</h2>
+          <p class="lead">Use esta galeria para apresentar casos autorizados de tratamentos faciais, corporais e beleza.</p>
+        </div>
+
+        <div class="gallery">
+          <article class="case-card">
+            <div class="case-images"><div class="before">Antes</div><div class="after">Depois</div></div>
+            <div class="case-copy"><h3>Revitalização facial</h3><p>Mais luminosidade, textura uniforme e sensação de pele hidratada.</p></div>
+          </article>
+          <article class="case-card">
+            <div class="case-images"><div class="before">Antes</div><div class="after">Depois</div></div>
+            <div class="case-copy"><h3>Cuidado corporal</h3><p>Protocolo personalizado para leveza, bem-estar e contorno.</p></div>
+          </article>
+          <article class="case-card">
+            <div class="case-images"><div class="before">Antes</div><div class="after">Depois</div></div>
+            <div class="case-copy"><h3>Beleza do olhar</h3><p>Design delicado para realçar harmonia e expressão natural.</p></div>
+          </article>
+        </div>
+
+        <p class="note">Aviso: os resultados podem variar de pessoa para pessoa. As imagens devem ser publicadas apenas com autorização expressa dos clientes.</p>
+      </div>
+    </section>
+
+    <section class="section" id="porque">
+      <div class="container why-grid">
+        <div class="premium-panel">
+          <span class="eyebrow">Porque escolher</span>
+          <h2>AquaDay Spa é cuidado premium com proximidade humana.</h2>
+          <p>Não se trata apenas de marcar um tratamento. Trata-se de reservar um momento para ser ouvida, cuidada e orientada com profissionalismo.</p>
+          <a class="button button-gold" href="#agendar">Quero a minha avaliação</a>
+        </div>
+
+        <div class="compare">
+          <div class="compare-row"><span class="check">✓</span><div><strong>Atendimento personalizado</strong><p>Cada cliente recebe uma recomendação ajustada ao seu objetivo.</p></div></div>
+          <div class="compare-row"><span class="check">✓</span><div><strong>Equipamentos modernos</strong><p>Protocolos estéticos com foco em conforto, segurança e evolução.</p></div></div>
+          <div class="compare-row"><span class="check">✓</span><div><strong>Ambiente premium</strong><p>Um espaço sereno, elegante e pensado para desacelerar.</p></div></div>
+          <div class="compare-row"><span class="check">✓</span><div><strong>Profissionais certificados</strong><p>Equipa qualificada e atenta aos detalhes do seu tratamento.</p></div></div>
+          <div class="compare-row"><span class="check">✓</span><div><strong>Protocolos exclusivos</strong><p>Experiências criadas para beleza, relaxamento e bem-estar.</p></div></div>
+          <div class="compare-row"><span class="check">✓</span><div><strong>Elevado índice de satisfação</strong><p>Prova social, testemunhos e acompanhamento próximo.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="processo">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Como funciona</span>
+          <h2>Agendar o seu momento é simples.</h2>
+        </div>
+
+        <div class="steps">
+          <article class="step"><div class="step-number">1</div><h3>Escolha o tratamento</h3><p>Selecione o serviço desejado ou peça ajuda para descobrir o protocolo ideal.</p></article>
+          <article class="step"><div class="step-number">2</div><h3>Agende a sua visita</h3><p>Fale connosco pelo WhatsApp ou preencha o formulário rápido de contacto.</p></article>
+          <article class="step"><div class="step-number">3</div><h3>Desfrute da transformação</h3><p>Chegue, relaxe e viva uma experiência cuidada do início ao fim.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="oferta">
+      <div class="container offer">
+        <div class="section-head" style="margin:0;">
+          <span class="eyebrow">Oferta especial</span>
+          <h2>Primeira visita com avaliação personalizada gratuita.</h2>
+          <p class="lead">Receba uma recomendação profissional para escolher o tratamento mais adequado aos seus objetivos de estética, beleza ou relaxamento.</p>
+          <p><strong>Oferta válida para novos clientes mediante disponibilidade de agenda.</strong></p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#agendar">Quero Agendar</a>
+            <a class="button button-secondary" href="https://wa.me/351[NUMERO_WHATSAPP]?text=Olá%20AquaDay%20Spa%2C%20quero%20aproveitar%20a%20avaliação%20gratuita.">Reservar pelo WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="offer-badge">
+          <strong>0€</strong>
+          <p>Avaliação personalizada na primeira visita</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Perguntas frequentes</span>
+          <h2>Tire as principais dúvidas antes de agendar.</h2>
+        </div>
+
+        <div class="faq-list">
+          <details open>
+            <summary>Preciso de avaliação antes do tratamento?</summary>
+            <p>Sim, recomendamos uma avaliação para compreender os seus objetivos, historial, rotina e possíveis contraindicações. Assim, indicamos o protocolo mais adequado.</p>
+          </details>
+          <details>
+            <summary>Quanto tempo dura cada sessão?</summary>
+            <p>Depende do serviço. Tratamentos de beleza podem durar cerca de 30 a 75 minutos, enquanto rituais de spa e tratamentos faciais ou corporais podem variar entre 45 e 120 minutos.</p>
+          </details>
+          <details>
+            <summary>Existem contraindicações?</summary>
+            <p>Alguns tratamentos podem ter contraindicações em casos específicos, como gravidez, condições dermatológicas, procedimentos recentes ou determinadas condições de saúde. A equipa confirma tudo na avaliação.</p>
+          </details>
+          <details>
+            <summary>Como funciona o pagamento?</summary>
+            <p>O pagamento pode ser feito conforme as opções disponíveis no espaço. Pode também solicitar orçamento para packs de tratamentos ou programas personalizados.</p>
+          </details>
+          <details>
+            <summary>Posso comprar vouchers-presente?</summary>
+            <p>Sim. Os vouchers AquaDay Spa são uma opção elegante para oferecer momentos de cuidado, relaxamento e bem-estar.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="agendar">
+      <div class="container">
+        <div class="final-cta">
+          <span class="eyebrow">Agende hoje</span>
+          <h2>Reserve o Seu Momento de Cuidado e Bem-Estar</h2>
+          <p>A sua melhor versão começa hoje.</p>
+
+          <form class="lead-form" onsubmit="sendWhatsApp(event)">
+            <input id="nome" name="nome" type="text" placeholder="O seu nome" required />
+            <select id="interesse" name="interesse" required>
+              <option value="">Tenho interesse em...</option>
+              <option>Estética facial</option>
+              <option>Estética corporal</option>
+              <option>Spa & relaxamento</option>
+              <option>Beleza</option>
+              <option>Voucher-presente</option>
+              <option>Avaliação personalizada</option>
+            </select>
+            <button class="button button-gold" type="submit">Enviar pedido</button>
+          </form>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="tel:+351[TELEFONE]">Ligar Agora</a>
+            <a class="button button-secondary" href="https://wa.me/351[NUMERO_WHATSAPP]?text=Olá%20AquaDay%20Spa%2C%20gostaria%20de%20agendar.">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <a href="#" class="brand">
+          <span class="logo-mark">A</span>
+          <span>AquaDay Spa</span>
+        </a>
+        <p style="margin-top:16px;">Spa, estética, beleza e bem-estar em [Cidade]. Tratamentos personalizados num ambiente premium, sereno e acolhedor.</p>
+      </div>
+
+      <div>
+        <div class="footer-title">Contactos</div>
+        <div class="footer-list">
+          <a href="tel:+351[TELEFONE]">+351 [TELEFONE]</a>
+          <a href="https://wa.me/351[NUMERO_WHATSAPP]">WhatsApp</a>
+          <a href="mailto:[EMAIL]">[EMAIL]</a>
+          <a href="[GOOGLE_MAPS_URL]">[MORADA], [Cidade]</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-title">Horário</div>
+        <div class="footer-list">
+          <p>Segunda a Sexta: 09:00–19:00</p>
+          <p>Sábado: 09:00–17:00</p>
+          <p>Domingo: Fechado</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-title">Links</div>
+        <div class="footer-list">
+          <a href="#servicos">Serviços</a>
+          <a href="#oferta">Oferta especial</a>
+          <a href="[INSTAGRAM]">Instagram</a>
+          <a href="[FACEBOOK]">Facebook</a>
+          <a href="/politica-de-privacidade">Política de privacidade</a>
+          <a href="/termos-e-condicoes">Termos e condições</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> AquaDay Spa. Todos os direitos reservados.</span>
+      <span>Website otimizado para agendamentos, leads e SEO local.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function sendWhatsApp(event) {
+      event.preventDefault();
+
+      const nome = document.getElementById("nome").value.trim();
+      const interesse = document.getElementById("interesse").value;
+
+      const message = encodeURIComponent(
+        `Olá AquaDay Spa, o meu nome é ${nome}. Tenho interesse em ${interesse}. Gostaria de agendar uma avaliação.`
+      );
+
+      window.location.href = `https://wa.me/351[NUMERO_WHATSAPP]?text=${message}`;
+    }
+  </script>
+</body>
+</html>
